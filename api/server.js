@@ -6,6 +6,8 @@ app.use(require("body-parser").json());
 const mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
 
+//alex
+
 const PORT = 3000;
 const MONGO_URL = "mongodb://localhost:27017/ShopMania";
 
