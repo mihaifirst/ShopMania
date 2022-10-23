@@ -6,6 +6,7 @@ import { RegisterComponent } from './modules/auth/components/register/register.c
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [AppComponent, RegisterComponent],
@@ -15,6 +16,7 @@ import { CommonModule } from '@angular/common';
     FormsModule,
     CommonModule,
     ReactiveFormsModule,
+    RouterModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

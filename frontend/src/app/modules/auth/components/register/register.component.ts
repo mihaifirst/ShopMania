@@ -29,7 +29,7 @@ export class RegisterComponent implements OnInit {
 
   private buildFormGroup() {
     return this.formBuilder.group({
-      fullname: this.formBuilder.control('', Validators.required),
+      fullName: this.formBuilder.control('', Validators.required),
       username: this.formBuilder.control('', Validators.required),
       email: this.formBuilder.control('', Validators.required),
       password: this.formBuilder.control('', Validators.required),
