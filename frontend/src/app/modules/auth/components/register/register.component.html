@@ -1,5 +1,6 @@
 <form [formGroup]="registerFormGroup">
   <h1>Register</h1>
+  <a routerLink="/auth/login">Already have an account?</a>
   <label>Full Name</label>
   <input formControlName="fullName" type="text" placeholder="Full name" />
   <label>E-mail</label>
@@ -14,5 +15,5 @@
     type="password"
     placeholder="confirmPassword"
   />
-  <button (click)="registerClicked()">Register</button>
+  <button (click)="registerClicked()">Regtister</button>
 </form>

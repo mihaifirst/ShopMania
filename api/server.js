@@ -16,15 +16,6 @@ const usersCollection = require("./app/modules/user/user.schema");
 const { generateToken } = require("./app/modules/auth/token-generator");
 require("./app/modules/auth/passport.middleware");
 
-app.post("/api/auth/login", async (request, response) => {
-  const user = await usersCollection.findOne({
-    username: request.body.username,
-  });
-
-  const token = generateToken(user);
-  response.json({ token });
-});
-
 const authRoutes = require("./app/modules/auth/auth.routes");
 app.use("/api", authRoutes);
 
