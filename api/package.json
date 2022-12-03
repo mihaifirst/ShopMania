@@ -20,6 +20,7 @@
     "http-status-codes": "^2.2.0",
     "joi": "^17.6.4",
     "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^3.1.2",
     "mongoose": "^6.6.5",
     "nodemon": "^2.0.20",
     "passport": "^0.6.0",
