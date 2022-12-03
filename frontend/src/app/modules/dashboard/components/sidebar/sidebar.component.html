@@ -1,1 +1,73 @@
-<p>sidebar works!</p>
+<ul>
+  <div>
+    <i class="las la-users la-2x"></i>
+    <li
+      [routerLink]="['/dashboard', 'users']"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      Users
+    </li>
+  </div>
+  <div>
+    <i class="las la-user-friends la-2x"></i>
+    <li
+      [routerLink]="['/dashboard', 'clients']"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      Clients
+    </li>
+  </div>
+  <div>
+    <i class="las la-building la-2x"></i>
+    <li
+      [routerLink]="['/dashboard', 'companies']"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      Companies
+    </li>
+  </div>
+  <div>
+    <i class="las la-cog la-2x"></i>
+    <li
+      [routerLink]="['/dashboard', 'config']"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      Config
+    </li>
+  </div>
+  <div>
+    <i class="las la-file-invoice la-2x"></i>
+    <li
+      [routerLink]="['/dashboard', 'invoices']"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      Invoices
+    </li>
+  </div>
+  <div>
+    <i class="las la-window-restore la-2x"></i>
+
+    <li
+      [routerLink]="['/dashboard', 'offers']"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      Offers
+    </li>
+  </div>
+  <div>
+    <i class="las la-memory la-2x"></i>
+    <li
+      [routerLink]="['/dashboard', 'logs']"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      Logs
+    </li>
+  </div>
+</ul>

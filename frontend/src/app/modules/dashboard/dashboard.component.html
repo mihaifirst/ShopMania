@@ -1,1 +1,10 @@
-<app-main></app-main>
+<app-topbar></app-topbar>
+<div class="wrapper">
+  <app-sidebar></app-sidebar>
+  <div class="wrapper-content">
+    <div class="wrapper-content--main">
+      <router-outlet></router-outlet>
+    </div>
+    <app-footer></app-footer>
+  </div>
+</div>

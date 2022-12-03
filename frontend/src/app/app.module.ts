@@ -8,6 +8,7 @@ import { CommonModule } from '@angular/common';
 import { AppRouting } from './app.routing';
 
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
+import { DashboardModule } from './modules/dashboard/dashboard.module';
 
 @NgModule({
   declarations: [AppComponent, NotFoundPageComponent],
@@ -18,6 +19,7 @@ import { NotFoundPageComponent } from './not-found-page/not-found-page.component
     CommonModule,
     ReactiveFormsModule,
     AppRouting,
+    DashboardModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

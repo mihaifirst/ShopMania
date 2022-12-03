@@ -1,0 +1,17 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  padding: 0px 20px;
+
+
+  .right-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .lab {
+      margin: 0px 10px;
+    }
+  }
+}

@@ -17,6 +17,7 @@ export class RegisterComponent implements OnInit {
     private router: Router
   ) {
     this.registerFormGroup = this.buildFormGroup();
+    this._patchFormGroup();
   }
 
   ngOnInit(): void {}
@@ -37,6 +38,16 @@ export class RegisterComponent implements OnInit {
       email: this.formBuilder.control('', Validators.required),
       password: this.formBuilder.control('', Validators.required),
       confirmPassword: this.formBuilder.control('', Validators.required),
+    });
+  }
+
+  private _patchFormGroup() {
+    this.registerFormGroup.patchValue({
+      fullName: 'Alex Mihai',
+      username: 'mihaifirst',
+      email: 'mihaialex@gmail.com',
+      password: 'alexmihai',
+      confirmPassword: 'alexmihai',
     });
   }
 }

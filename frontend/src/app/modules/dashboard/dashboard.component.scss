@@ -1,0 +1,19 @@
+.wrapper{
+  display: flex;
+  flex-direction: row;
+  height: 90vh;
+
+  .wrapper-content{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+
+    .wrapper-content--main{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+  }
+}
