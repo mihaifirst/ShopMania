@@ -2,20 +2,23 @@ ul {
   list-style: none;
   display: inline-block;
   flex: 1;
-  height: 100%;
-  div{
+
+  div {
     display: flex;
     flex-direction: row;
     align-items: center;
   }
- i {
-   margin-right: 20px;
- }
+
+  i {
+    margin-right: 20px;
+  }
 }
-li{
+
+li {
   margin: 10px;
   font-size: 16px;
-  &.active{
+
+  &.active {
     color: var(--red-color);
   }
 }

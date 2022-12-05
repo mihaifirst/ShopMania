@@ -1,15 +1,15 @@
-.wrapper{
+.wrapper {
   display: flex;
   flex-direction: row;
-  height: 90vh;
+  height: calc(100vh - 80px);
 
-  .wrapper-content{
+  .wrapper-content {
     display: flex;
     flex-direction: column;
     flex: 1;
     justify-content: space-between;
 
-    .wrapper-content--main{
+    .wrapper-content--main {
       display: flex;
       align-items: center;
       justify-content: center;

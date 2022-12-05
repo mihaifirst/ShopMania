@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AuthService } from '../services/auth.service';
 import { Router } from '@angular/router';
+import { JWTTokenService } from '../../services/jwt-token.service';
 
 @Component({
   selector: 'app-login',
@@ -12,6 +13,7 @@ export class LoginComponent implements OnInit {
   public loginFormGroup: FormGroup;
 
   constructor(
+    private jwtToken: JWTTokenService,
     private fb: FormBuilder,
     private authService: AuthService,
     private router: Router
@@ -26,6 +28,7 @@ export class LoginComponent implements OnInit {
     this.authService.login(this.loginFormGroup.value).subscribe((response) => {
       console.log(response);
       this.router.navigate(['/dashboard']);
+      this.jwtToken.setCurrentUser(response.token);
     });
   }
 

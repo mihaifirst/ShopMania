@@ -29,6 +29,10 @@ export class JWTTokenService {
     }
   }
 
+  public isTokenOnLocalStorage(): boolean {
+    return !!localStorage.getItem(ACCESS_TOKEN_KEY);
+  }
+
   public setCurrentUser(accessToken: any) {
     this.accessToken = accessToken;
     localStorage.setItem(ACCESS_TOKEN_KEY, accessToken);
