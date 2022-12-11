@@ -11,13 +11,14 @@ app.use(bodyParser.json());
 const mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
 
-const usersCollection = require("./app/modules/user/user.schema");
-
-const { generateToken } = require("./app/modules/auth/token-generator");
 require("./app/modules/auth/passport.middleware");
 
+/* Routes */
 const authRoutes = require("./app/modules/auth/auth.routes");
-app.use("/api", authRoutes);
+const userRoutes = require("./app/modules/user/user.routes");
+
+app.use("/api/auth", authRoutes);
+app.use("/api/users", userRoutes);
 
 const PORT = 3000;
 const MONGO_URL = "mongodb://localhost:27017/ShopMania";

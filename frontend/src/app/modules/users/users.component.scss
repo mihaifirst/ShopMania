@@ -1,0 +1,17 @@
+.user-table {
+  padding: 5px;
+  border: 1px solid;
+  border-collapse: collapse;
+
+  th {
+    padding: 5px;
+    border: 1px solid;
+  }
+
+  td {
+    height: 50px;
+    width: 200px;
+    padding: 5px;
+    border: 1px solid;
+  }
+}

@@ -9,9 +9,10 @@ import { AppRouting } from './app.routing';
 
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 import { DashboardModule } from './modules/dashboard/dashboard.module';
+import { UsersComponent } from './modules/users/users.component';
 
 @NgModule({
-  declarations: [AppComponent, NotFoundPageComponent],
+  declarations: [AppComponent, NotFoundPageComponent, UsersComponent],
   imports: [
     BrowserModule,
     HttpClientModule,

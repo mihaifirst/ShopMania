@@ -1,1 +1,20 @@
-<p>users works!</p>
+<form [formGroup]="usersFormGroup">
+  <table class="user-table">
+    <thead>
+      <tr>
+        <th>Fullname</th>
+        <th>username</th>
+        <th>isAdmin</th>
+        <th>isActive</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.fullName }}</td>
+        <td>{{ user.username }}</td>
+        <td>{{ user.isAdmin }}</td>
+        <td>{{ user.isActive }}</td>
+      </tr>
+    </tbody>
+  </table>
+</form>
