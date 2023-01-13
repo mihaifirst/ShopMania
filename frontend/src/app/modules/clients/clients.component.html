@@ -1,1 +1,56 @@
-<p>clients works!</p>
+<form [formGroup]="clientFormGroup">
+  <input type="text" formControlName="name" />
+  <input
+    type="text"
+    formControlName="entity"
+    placeholder="entity"
+  /><!--select -->
+  <input type="text" formControlName="cui" />
+  <input type="text" formControlName="cnp" />
+  <input type="text" formControlName="address" />
+  <input type="text" formControlName="city" />
+  <input type="text" formControlName="country" />
+  <input type="text" formControlName="zipcode" />
+  <input type="text" formControlName="contactPersonName" />
+  <input type="text" formControlName="phone" />
+  <input type="text" formControlName="website" />
+</form>
+
+<button (click)="createClient()">Create Client</button>
+
+<form>
+  <table class="user-table">
+    <thead>
+      <th>Name</th>
+      <th>Entity</th>
+      <th>Cui</th>
+      <th>Cnp</th>
+      <th>City</th>
+      <th>Country</th>
+      <th><i class="las la-phone la-2x"></i></th>
+      <th><i class="las la-envelope la-2x"></i></th>
+      <th><i class="lab la-weebly la-2x"></i></th>
+      <th></th>
+    </thead>
+    <tbody class="text-center">
+      <tr *ngFor="let client of clients">
+        <td>{{ client.name }}</td>
+        <td>{{ client.entity }}</td>
+        <td>{{ client.cui }}</td>
+        <td>{{ client.cnp }}</td>
+        <td>{{ client.city }}</td>
+        <td>{{ client.country }}</td>
+        <td>{{ client.phone }}</td>
+        <td>{{ client.email }}</td>
+        <td>{{ client.website }}</td>
+        <td>
+          <i class="las la-edit la-2x" (click)="onEditClient(client)"></i
+          ><i
+            class="las la-trash-alt la-2x"
+            (click)="onDeleteClient(client._id)"
+          ></i>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</form>

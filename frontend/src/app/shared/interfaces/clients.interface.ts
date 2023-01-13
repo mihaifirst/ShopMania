@@ -1,8 +1,9 @@
 import { EntityEnum } from '../enums/entity.enum';
 
 export interface ClientInterface {
+  _id: string;
   name: string;
-  enum: EntityEnum;
+  entity: EntityEnum;
   cui: string;
   cnp: string;
   address: string;

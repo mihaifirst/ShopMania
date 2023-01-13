@@ -16,9 +16,13 @@ require("./app/modules/auth/passport.middleware");
 /* Routes */
 const authRoutes = require("./app/modules/auth/auth.routes");
 const userRoutes = require("./app/modules/user/user.routes");
+const clientRoutes = require("./app/modules/client/client.routes");
+const featureRoutes = require("./app/modules/feature/feature.routes")
 
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
+app.use("/api/clients", clientRoutes);
+app.use("/api/features", featureRoutes);
 
 const PORT = 3000;
 const MONGO_URL = "mongodb://localhost:27017/ShopMania";

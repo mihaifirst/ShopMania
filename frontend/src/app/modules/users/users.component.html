@@ -12,8 +12,12 @@
       <tr *ngFor="let user of users">
         <td>{{ user.fullName }}</td>
         <td>{{ user.username }}</td>
-        <td>{{ user.isAdmin }}</td>
-        <td>{{ user.isActive }}</td>
+        <td class="text-center">
+          <app-boolean-icon [active]="user.isAdmin"></app-boolean-icon>
+        </td>
+        <td class="text-center">
+          <app-boolean-icon [active]="user.isActive"></app-boolean-icon>
+        </td>
       </tr>
     </tbody>
   </table>

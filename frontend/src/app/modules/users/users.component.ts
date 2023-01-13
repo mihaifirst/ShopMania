@@ -24,7 +24,7 @@ export class UsersComponent implements OnInit {
 
   private buildFormGroup() {
     return this.fb.group({
-      firstName: this.fb.control('', [Validators.required]),
+      firstName: this.fb.control('', Validators.required),
       username: this.fb.control('', Validators.required),
       lastName: this.fb.control('', Validators.required),
       fullName: this.fb.control('', Validators.required),

@@ -10,9 +10,16 @@ import { AppRouting } from './app.routing';
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 import { DashboardModule } from './modules/dashboard/dashboard.module';
 import { UsersComponent } from './modules/users/users.component';
+import { SharedModule } from './shared/shared.module';
+import { ClientsComponent } from './modules/clients/clients.component';
 
 @NgModule({
-  declarations: [AppComponent, NotFoundPageComponent, UsersComponent],
+  declarations: [
+    AppComponent,
+    NotFoundPageComponent,
+    UsersComponent,
+    ClientsComponent,
+  ],
   imports: [
     BrowserModule,
     HttpClientModule,
@@ -21,6 +28,7 @@ import { UsersComponent } from './modules/users/users.component';
     ReactiveFormsModule,
     AppRouting,
     DashboardModule,
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

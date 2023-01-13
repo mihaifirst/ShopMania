@@ -9,11 +9,14 @@
     flex: 1;
     justify-content: space-between;
 
+
     .wrapper-content--main {
       display: flex;
       align-items: center;
+      align-self: center;
       justify-content: center;
       height: 100%;
+      width: 80%;
     }
   }
 }

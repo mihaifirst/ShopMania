@@ -9,7 +9,7 @@ const userSchema = mongoose.Schema({
   password: { type: String, select: false },
   isActive: {
     type: Boolean,
-    default: false,
+    default: true,
   },
   isAdmin: {
     type: Boolean,
