@@ -11,24 +11,24 @@ import { NotFoundPageComponent } from './not-found-page/not-found-page.component
 import { DashboardModule } from './modules/dashboard/dashboard.module';
 import { UsersComponent } from './modules/users/users.component';
 import { SharedModule } from './shared/shared.module';
-import { ClientsComponent } from './modules/clients/clients.component';
+import {ClientsModule} from "./modules/clients/clients.module";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
     AppComponent,
     NotFoundPageComponent,
     UsersComponent,
-    ClientsComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule,
     CommonModule,
-    ReactiveFormsModule,
     AppRouting,
     DashboardModule,
     SharedModule,
+    ClientsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

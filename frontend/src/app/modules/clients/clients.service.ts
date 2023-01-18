@@ -21,6 +21,12 @@ export class ClientsService {
     return this.http.post<ClientInterface>(apiUrl, body);
   }
 
+  public updateClient(
+    body: Partial<ClientInterface>
+  ): Observable<ClientInterface> {
+    return this.http.patch<ClientInterface>(`${apiUrl}/${body._id}`, body);
+  }
+
   public deleteClient(id: string): Observable<any> {
     return this.http.delete<any>(`${apiUrl}/${id}`);
   }
